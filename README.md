@@ -4,11 +4,11 @@ A simple mobile game about catching snowflakes. Snow Stopper was built by two hi
 
 ## Getting Started
 
-Simply clone the repository locally then open and run the project in a recent version of the Unity Editor. We recomend using the official [GitHub for Unity] (https://unity.github.com/) extension.
+Simply clone the repository locally then open and run the project in a recent version of the Unity Editor.
 
 ## Built With
 
-* [Unity] (https://unity3d.com/) - A game engine that needs no introdiction
+* [Unity](https://unity3d.com/) - A game engine that needs no introdiction
 
 ## Authors
 
