@@ -1,5 +1,6 @@
 using UnityEngine;
 using System.Collections;
+using UnityEngine.Advertisements;
 
 public class SnowflakeSpawn : MonoBehaviour {
 		
@@ -17,6 +18,7 @@ public class SnowflakeSpawn : MonoBehaviour {
 	float width;
 	bool gameOver;
 	string poolObject;
+	int playCounter = 0;
 
 	void Start () {
 		poolObject = "Snowflake";
@@ -47,6 +49,16 @@ public class SnowflakeSpawn : MonoBehaviour {
 			highscore.SendMessage("UpdateText");
 			menu.SendMessage("Show");
 			time.SendMessage("EndTimer");
+
+			//Implement Unity Advertisements, show every three games.
+			if (playCounter == 3) {
+				Advertisement.Show();
+				playCounter = 0;
+				Debug.Log("Show Ad!");
+			} else {
+				playCounter++;
+			}
+
 		}
 	}
 

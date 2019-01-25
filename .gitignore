@@ -50,3 +50,7 @@ sysinfo.txt
 
 # Crashlytics generated file
 crashlytics-build.properties
+
+# Ignore Unity Plugins
+assets/Plugins/
+.vscode/
